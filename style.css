@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #ededed;
+}
+.left{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 55%;
+}
+#one{
+    /*background: aqua;*/
+    grid-column:  1 / 2;
+}
+#square{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    margin: 20px;
+    rotate: 45deg;
+}
+
+#two{
+   /*background: pink;*/
+    grid-column:  2 / 4;
+    text-align: right;
+    padding: 10px;
+    font-family: "Montserat", sans-serif;
+}
+h6{
+    display: none;
+}
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:20px ;
+}
+h5{
+    font-size: 15px;
+    font-weight: 500;
+}
+.center{
+    text-align: center;
+    font-weight: 300;
+}
+h1{
+    font-weight: 300;
+}
+.text{
+    margin: 30px;
+    font-size: 30px;
+}
+#three{
+   
+    grid-column:  1 / 4;
+}
+#four{
+    
+    grid-column:  1 / 4;
+}
+
+
+.text {
+  font-family: "Montserat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.para{
+    padding: 20px;
+    font-size: 14px;
+    width:50vh;
+    font-weight: 300;
+}
+.right{
+overflow: hidden;
+padding: 40px;
+}
+video{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;  
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    padding: 18px;
+    margin-left: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+}
+.arrow i{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+@media (max-width:600px){
+    #main{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        background-color: #ededed;
+    }
+    .left{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 55% 25%;
+    }
+    #one{
+        grid-column: 1 / 2;
+        
+    }
+    #two{
+        grid-column: 2 / 4;
+        
+    }
+    h4{ 
+        display: none;
+    }
+    h5{
+        display: none;
+    }
+    .center{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .para{
+        width: 100%;
+    }
+    .right{
+      
+    }
+    h6{
+        display: initial;
+        font-size: 25px;
+        text-align: right;
+    }
+    .arrow{
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    .arrow i{
+        rotate: 90deg;
+    }
+  
+}
